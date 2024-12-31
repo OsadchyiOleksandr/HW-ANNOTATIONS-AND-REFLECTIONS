@@ -10,6 +10,7 @@ public class Demonstration {
 
     Method[] methods = clazz.getDeclaredMethods();
 
+    // Check and output with Info of Methods via reflections
     public void runDemo(){
         for (Method method : methods) {
             if (method.isAnnotationPresent(MethodInfo.class)) {
@@ -20,7 +21,7 @@ public class Demonstration {
 
                 if (method.isAnnotationPresent(Author.class)) {
                     Author author = method.getAnnotation(Author.class);
-                    System.out.println("Автор: " + author.firstName() + " " + author.lastName());
+                    System.out.println("Author: " + author.firstName() + " " + author.lastName());
                 }
                 System.out.println("-----------------------------------");
             }

@@ -5,6 +5,7 @@ import app.annotation.MethodInfo;
 
 public class ArrayUtils {
 
+    // Sum method
     @MethodInfo(
             name = "sumOfEl",
             returnType = "int",
@@ -19,6 +20,7 @@ public class ArrayUtils {
         return total;
     }
 
+    // Max el finder
     @MethodInfo(
             name = "maxEl",
             returnType = "int",
@@ -35,6 +37,7 @@ public class ArrayUtils {
         return max;
     }
 
+    // Min el finder
     @MethodInfo(
             name = "minEl",
             returnType = "int",
